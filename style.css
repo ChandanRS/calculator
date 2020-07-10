@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(to right, #295494, #afbcdc);
+    box-sizing:border-box;
+    font-family: Gotham Rounded, sans-serif;
+  }
+  
+  .container{
+    margin-top: 100px;
+    width: 20rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+  }
+  
+  .span-two{
+    /* display: grid; */
+     grid-column: span 2;
+  }
+
+  button{
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      font-weight: 600;
+      font-size: 1.5rem;
+      border: 1px solid white;
+      cursor: pointer;
+  }
+
+  button:hover{
+      background-color: thistle;
+      border: 1px solid white;
+      color:black;
+  }
+
+  .display-screen{
+      background-color: rgb(236, 217, 236);
+      grid-column: 1/-1;
+      /* border-radius: 2px; */
+      display: flex;
+      flex-direction: column;
+     justify-content: space-around;
+     text-align: right;
+     word-wrap: break-word;
+     word-break: break-all;
+     min-height: 4rem;
+     /* margin-bottom: -40px;  */
+    }
+
+    .display-screen .previous-expn{
+        font-size: 1.5rem;
+       padding-right: 1rem;
+       font-weight: 500;    
+    }
+
+    .display-screen .current-expn{
+        font-size: 2.2rem;
+        padding-right: 1rem;
+        font-weight: 500;
+    
+    }
