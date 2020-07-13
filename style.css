@@ -52,6 +52,7 @@ body{
      word-break: break-all;
      min-height: 4rem;
      /* margin-bottom: -40px;  */
+     border-radius: 5px;
     }
 
     .display-screen .previous-expn{

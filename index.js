@@ -21,6 +21,11 @@ class Calculator{
         this.currentOperand = this.currentOperand.toString()+ number.toString();
     }
 
+    finalOutput(){
+            this.previousOperand="";
+            console.log("finalOutput called")
+    }
+
     
     appendOperator(operator){
         
@@ -72,8 +77,7 @@ class Calculator{
         // this.currentOperand = '';
     }
     
-//Previous operand is executed after one operand. This should be rectified
-
+        
     compute(){
    
         //  if (this.previousOperand[(this.previousOperand.length-1)].match(ops)) return;
@@ -161,5 +165,6 @@ deleteBtn.addEventListener('click',()=>{
 
 equal.addEventListener('click',()=>{
     calculator.compute()
+    calculator.finalOutput()
     calculator.updateDisplay()
 })
